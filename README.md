@@ -34,7 +34,3 @@ SceneController
   - Would be more idea to adjust this to have this class take reference to a transition interface, this would
     make it easier to replace the transition screen with an animation or some other object.
   - Extend with how ever many scenes you need!
-
-*Issue*
-The SceneController is too coupled with the scene transition object. This should be abstracted further such that the SceneController
-just emits an event when the transition begins and ends, and the transition UI listens for it regardless of it's location. 
